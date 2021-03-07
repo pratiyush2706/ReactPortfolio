@@ -1,0 +1,116 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  height: calc(100vh - 65px);
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.name {
+  background-image: url(https://media.giphy.com/media/QTgb28iM3s9AFljDuz/giphy.gif);
+  background-size: cover;
+  color: rgb(234, 46, 68);
+  background-clip: text;
+  font-size: 11vw;
+  line-height: 1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  margin-top: 30vh;
+  width: 100vw;
+  -webkit-box-align: center;
+  align-items: center;
+  text-shadow: rgba(0, 0, 0, 0.64) -6px 4px 6px,
+    rgba(255, 255, 255, 0.08) 4px -5px 10px;
+  background-position: center center;
+  text-align: center;
+}
+
+.description {
+  color: rgb(234, 46, 68);
+  padding: 0 10%;
+  font-size: 1.2vw;
+}
+
+.line1{
+  overflow: hidden;
+  animation: 
+  typing1 3.5s steps(97);
+  white-space: nowrap;
+  width: auto;
+  text-align: left;
+}
+
+.line2{
+  overflow: hidden;
+  animation: 
+  typing2 3.5s steps(46);
+  white-space: nowrap;
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+  width: 46ch;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  text-align: left;
+}
+
+.line3 {
+  overflow: hidden;
+  animation: 
+  typing3 3.5s steps(67);
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+  opacity: 0;
+  white-space: nowrap;
+  width: 67ch;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  text-align: left;
+}
+
+/* The typing effect */
+@keyframes typing1 {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 97ch;
+  }
+}
+
+@keyframes typing2 {
+  0% {
+    width: 0ch;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    width: 46ch;
+    opacity: 1;
+  }
+}
+
+@keyframes typing3 {
+  0% {
+    width: 0ch;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    width: 67ch;
+    opacity: 1;
+  }
+}
+
