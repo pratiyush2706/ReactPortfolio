@@ -18,7 +18,6 @@ import * as ROUTES from "../../utils/routes";
 const TopBar = () => {
   const classes = useStyles();
   const isXs = useMediaQuery((theme) => theme.breakpoints.down("sm"));
-  console.log({ isXs });
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
 
