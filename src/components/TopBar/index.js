@@ -1,6 +1,5 @@
 import {
   AppBar,
-  Button,
   Menu,
   MenuItem,
   IconButton,
@@ -29,7 +28,7 @@ const TopBar = () => {
     setAnchorEl(null);
   };
 
-  const options = ["home", "About", "Work"];
+  const options = ["Home", "About", "Work"];
   return (
     <AppBar position="static" className={classes.appBar}>
       <Toolbar disableGutters>
@@ -40,7 +39,7 @@ const TopBar = () => {
             className={classes.circularImage}
           />
           <Typography variant="h2" className={classes.name}>
-            pratiyush chaitnya
+            {isXs ? 'pratiyush' : 'pratiyush chaitnya'}
           </Typography>
         </Link>
         {isXs ? (
@@ -69,15 +68,11 @@ const TopBar = () => {
           </div>
         ) : (
           <div className={classes.menu}>
+            {options.map(option => (
             <MenuItem>
-              <Typography variant="body1">Home</Typography>
+              <Typography variant="body1">{option}</Typography>
             </MenuItem>
-            <MenuItem>
-              <Typography variant="body1">About</Typography>
-            </MenuItem>
-            <MenuItem>
-              <Typography variant="body1">Work</Typography>
-            </MenuItem>
+            ))}
           </div>
         )}
       </Toolbar>
